@@ -1,0 +1,30 @@
+. firebase auth, firebase data 서비스 추가
+  > ng g s core/FireAuthService
+  > ng g s core/FireDataService
+  > ng generate guard core/Auth
+  > ng g s core/TreeDataService
+
+.  메인화면 만들기
+  > ng g c shared/header
+  > ng g c features/home
+  > ng g c features/db-viewer
+  > ng g c features/file-viewer
+  > ng g c features/data-editer
+  > ng g c features/memo-viewer
+
+ 
+
+  > auth module:  ng g m features/auth  --routing
+  > ng g c features/auth/login
+  > ng g c features/auth/register
+
+
+  > auth모듈 및 app.routes 편집 : Routes 추가
+
+icon확인
+
+https://fonts.google.com/icons
+
+
+https://www.youtube.com/watch?v=pP7quzFmWBY
+firebase auth uid: xyz5787@naver.com   > qC53z7Q2F8QYZeGJEDQF8qlkz562
