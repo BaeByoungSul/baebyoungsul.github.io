@@ -7,6 +7,8 @@
 
 .  메인화면 만들기
   > ng g c shared/header
+  > ng g c shared/data-tree
+
   > ng g c features/home
   > ng g c features/data-viewer
   > ng g c features/file-viewer
@@ -14,6 +16,8 @@
   > ng g c features/memo-viewer
   > ng g c features/memo-test
   > ng g c features/pdf-test
+  > ng g c features/tree-test2
+
 
 
   > auth module:  ng g m features/auth  --routing

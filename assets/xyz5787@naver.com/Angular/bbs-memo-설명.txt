@@ -12,6 +12,13 @@
               objectVal() authService$.user$에서 값이 방출될 때 실행되기 때문에 injection context가 비활성 상태일 수도 있다.
    > 해결: 비동기 호출이어도 Injection Context를 사용할 수 있도록 함.  Injector 주입 및 runInInjectionContext 사용
 
+. realtime database : set(), push() , update()
+  > set() : 새 객체 생성 및 덮어쓰기
+  > push() : 목록(list) 형태의 데이터에 고유한 시간 순서 키를 자동으로 생성하여 그 아래에 새 데이터를 추가
+  > get: 데이터베이스에서 현재 시점의 데이터를 단 한 번 가져옵니다
+  > onValue() : 해당 경로의 데이터가 변경될 때마다 자동으로 업데이트를 받아옵니다 (실시간 동기화).
+  > update() : 기존 데이터의 일부 필드만 변경하는 작업.
+  > remove() 
 
 . docx-preview: 
    > 문제: mammoth를 사용하니까  원본 그대로 보이지 않고 다른 경고도 나타남
