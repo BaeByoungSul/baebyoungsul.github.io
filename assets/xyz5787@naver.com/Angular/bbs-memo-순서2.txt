@@ -23,6 +23,7 @@
   > auth module:  ng g m features/auth  --routing
   > ng g c features/auth/login
   > ng g c features/auth/register
+  > ng g c features/auth/login
 
 
   > auth모듈 및 app.routes 편집 : Routes 추가
