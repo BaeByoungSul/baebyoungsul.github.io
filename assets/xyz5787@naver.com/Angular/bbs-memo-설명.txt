@@ -1,10 +1,15 @@
 . firebase console 접속해서 Realtime Database (데이터베이스), Authentication (사용자 인증) 서비스 이용
   > Web 앱을 추가하면 Augular 사용할 환경변수 나타남
 
-. authGaurd: login상태가 아니면 /auth/login으로 이동 처리
-  > 문제: authGaurd에서 자동으로 login 처리가 된다.
-  > 원인: 토큰을 가져오는 부분에서 자동으로 토큰이 재발행되어서 나타나는 현상
-      >>  const tokenResultPromise = user.getIdTokenResult(true); >> const tokenResultPromise = user.getIdTokenResult(false);
+. authGaurd: login상태가 아니면 /auth/login으로 이동 처리하려고 하는데 토큰이 만기가 되어도 /auth/login화면으로 이동됨
+  > 문제: authGaurd에서 자동으로  login 처리가 된다.
+  > 원인: 자동으로 토큰이 재발행되어서 나타나는 현상
+  > 해결: 자동 토큰 발행이 되지 않게 하려면 signOut처리를 해야 한다.
+
+. 자동 토큰 발행
+  > 토큰이 만료가 되면 자동으로 토큰이 발행됨
+  > getIdToken() 호출은 "나는 지금 당장 백엔드에 보낼 유효한 최신 토큰이 필요해" 라고 SDK에 명시적으로 요청하는 행위
+  > SDK는 그 외의 경우에도 세션의 연속성을 위해 자체적인 로직에 따라 토큰을 미리 갱신하고 있습니다.
 
 . realtime database 사용자 데이터  처리
    > 문제: Firebase API called outside injection context 경고

@@ -2,6 +2,8 @@
   > ng g s core/FireAuthService
   > ng g s core/FireDataService
   > ng generate guard core/Auth
+  > ng generate guard core/Auth2
+
   > ng g s core/TreeDataService
   > ng g s core/EventBusService
 
@@ -23,7 +25,7 @@
   > auth module:  ng g m features/auth  --routing
   > ng g c features/auth/login
   > ng g c features/auth/register
-  > ng g c features/auth/login
+  > ng g c features/auth/login2
 
 
   > auth모듈 및 app.routes 편집 : Routes 추가
