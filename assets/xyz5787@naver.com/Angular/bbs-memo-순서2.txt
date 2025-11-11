@@ -1,11 +1,14 @@
 . firebase auth, firebase data 서비스 추가
   > ng g s core/FireAuthService
   > ng g s core/FireDataService
+  > ng g s core/NoteService
+
   > ng generate guard core/Auth
   > ng generate guard core/Auth2
 
   > ng g s core/TreeDataService
   > ng g s core/EventBusService
+
 
 .  메인화면 만들기
   > ng g c shared/header
@@ -16,10 +19,12 @@
   > ng g c features/file-viewer
   > ng g c features/data-editer
   > ng g c features/memo-viewer
+  > ng g c features/memo-viewer2
   > ng g c features/memo-test
   > ng g c features/pdf-test
   > ng g c features/tree-test2
-
+  > ng g c features/note-editor
+  > ng g c features/note-mgt
 
 
   > auth module:  ng g m features/auth  --routing

@@ -6,6 +6,8 @@
   > firebase auth api를 이용하여 login, logout, register user
   > firebase Realtime Database 관리화면
   > text , docx, pdf 파일을 보는 화면
+  > firestore를 이용해서 하루의 일정이나 잡다한 것을 적는 기능을 추가
+      >> 2025/11/10 시작
   
 
 . firebase console에서 처리한 것 
@@ -26,6 +28,7 @@
 
    > ng add @angular/material   
    > npm install @angular/fire
+   > npm install firebase @angular/fire  : 2025.11.10 firestore
    > npm install docx-preview
 
    > npm ls
